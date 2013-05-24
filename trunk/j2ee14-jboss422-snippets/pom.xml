@@ -49,10 +49,10 @@
     </properties>
 
     <modules>
-        <module>j2ee14-jboss422-snippets-ear</module>
-        <module>j2ee14-jboss422-snippets-ejb</module>
-        <module>j2ee14-jboss422-snippets-web</module>
-        <module>j2ee14-jboss422-snippets-client</module>
+        <module>../j2ee14-jboss422-snippets-ear</module>
+        <module>../j2ee14-jboss422-snippets-ejb</module>
+        <module>../j2ee14-jboss422-snippets-web</module>
+        <module>../j2ee14-jboss422-snippets-client</module>
     </modules>
         
 </project>
