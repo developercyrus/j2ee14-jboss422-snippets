@@ -48,6 +48,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+
+    <!-- 
+        to support flat, multi-modules project 
+        http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#Example_5        
+    -->
     <modules>
         <module>../j2ee14-jboss422-snippets-ear</module>
         <module>../j2ee14-jboss422-snippets-ejb</module>
