@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- 
+        Reference (Multi module maven project)
+            1. http://zachxu.blogspot.hk/2011/01/user-maven-to-build-ear.html
+            2. http://atoms.net84.net/wordpress/en/2010/02/03/construir-un-proyecto-ear-ejb-j2ee-1-4-con-maven-2-para-websphere/
+            3. http://codepioneer.wordpress.com/2012/12/12/create-maven-multi-module-roject-using-eclipse/
+        
+        Local Call:
+            0. D:\eclipse_workspace_4.2\j2ee14-jboss422-snippets>mvn clean install
+            1. in EWINXP1, E:\jboss-4.2.2.GA\bin>run.bat -b 0.0.0.0
+            or      
+            1. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
+            2. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy  
+            3. in client machine, open browser for http://192.168.1.252:8080/j2ee14-snippets-web/HelloWorldLocalClientServlet  
+            
+        Remote call
+            0. D:\eclipse_workspace_4.2\j2ee14-jboss422-snippets>mvn clean install
+            1. in EWINXP1, E:\jboss-4.2.2.GA\bin>run.bat -b 0.0.0.0
+            or      
+            1. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
+            2. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy
+            3. in client machine eclipse, run session.bean.stateless.client.HelloWorldRemoteClient   
+            
+        Remark
+            0. server with 0.0.0.0 allows public inbound connection, no need dedicated to a specified ip address                           
+    -->
+    
+    
+    <!-- 
+        Not properly configured yet!
+    
+        1. C:\jboss-as-7.1.1.Final\bin>standalone
+        2. D:\eclipse_workspace_4.2\j2ee14-snippets>mvn clean install
+        3. D:\eclipse_workspace_4.2\j2ee14-snippets\j2ee14-snippets-ear>mvn clean package install jboss-as:deploy -DskipTests -DuserName=admin -Dpassword=password -Ddeploy.hostname=192.168.1.252 -Ddeploy.port=9999
+    -->
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>multi.module.eclipse</groupId>
+    <artifactId>j2ee14-jboss422-snippets</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>j2ee14-jboss422-snippets</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>j2ee14-jboss422-snippets-ear</module>
+        <module>j2ee14-jboss422-snippets-ejb</module>
+        <module>j2ee14-jboss422-snippets-web</module>
+        <module>j2ee14-jboss422-snippets-client</module>
+    </modules>
+        
+</project>
