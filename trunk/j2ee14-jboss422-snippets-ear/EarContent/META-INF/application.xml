@@ -6,12 +6,12 @@
         
     <display-name>j2ee14-jboss422-snippets-ear</display-name>
     <module>
-        <ejb>j2ee14-snippets-ejb-1.0.jar</ejb>
+        <ejb>j2ee14-jboss422-snippets-ejb-1.0.jar</ejb>
     </module>
     <module>
         <web>
-            <web-uri>j2ee14-snippets-web-1.0.war</web-uri>
-            <context-root>j2ee14-snippets-web</context-root>
+            <web-uri>j2ee14-jboss422-snippets-web-1.0.war</web-uri>
+            <context-root>j2ee14-jboss422-snippets-web</context-root>
         </web>
     </module>
 </application>
