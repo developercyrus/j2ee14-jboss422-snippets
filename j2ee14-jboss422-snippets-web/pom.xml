@@ -6,6 +6,7 @@
         <groupId>multi.module.eclipse</groupId>
         <artifactId>j2ee14-jboss422-snippets</artifactId>
         <version>1.0</version>
+        <relativePath>../j2ee14-jboss422-snippets/pom.xml</relativePath>            
     </parent>
     
     <modelVersion>4.0.0</modelVersion>
