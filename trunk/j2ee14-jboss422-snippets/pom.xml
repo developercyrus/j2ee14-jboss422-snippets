@@ -12,16 +12,16 @@
             0. D:\eclipse_workspace_4.2\j2ee14-jboss422-snippets>mvn clean install
             1. in EWINXP1, E:\jboss-4.2.2.GA\bin>run.bat -b 0.0.0.0
             or      
-            1. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
-            2. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy  
+            1. in EWINXP1, E:\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
+            2. in EWINXP1, E:\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy  
             3. in client machine, open browser for http://192.168.1.252:8080/j2ee14-snippets-web/HelloWorldLocalClientServlet  
             
         Remote call
             0. D:\eclipse_workspace_4.2\j2ee14-jboss422-snippets>mvn clean install
             1. in EWINXP1, E:\jboss-4.2.2.GA\bin>run.bat -b 0.0.0.0
             or      
-            1. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
-            2. in EWINXP1, E:\j2ee14-snippets\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy
+            1. in EWINXP1, E:\j2ee14-jboss422-snippets-ear>mvn -X jboss:start        
+            2. in EWINXP1, E:\j2ee14-jboss422-snippets-ear>mvn -X jboss:deploy
             3. in client machine eclipse, run session.bean.stateless.client.HelloWorldRemoteClient   
             
         Remark
